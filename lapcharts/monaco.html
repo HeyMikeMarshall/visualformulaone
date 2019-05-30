@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>VisualF1 - Monaco GP Lap Charts</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">VisualF1alpha</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lap Time Charts
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="lapcharts/monaco.html">Monaco GP</a>
+              <a class="dropdown-item" href="lapcharts/villeneuve.html">Canadian GP</a>
+              <a class="dropdown-item" href="lapcharts/redbullring.html">Austrian GP</a>
+              <a class="dropdown-item" href="lapcharts/silverstone.html">British GP</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Circuit Comparison</a>
+            <a class="dropdown-item" href="#">Dataset</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>Grand Prix de Monaco</h1>
+        </div>
+      </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <p>The Monaco Grand Prix, or Grand Prix de Monaco, is one of motor racing's premier events, and is
+              considered by many to be one of the jewels in the unofficial 'Triple Crown of Motorsport'. It is a tight and
+              winding track that runs through the streets of the Principality. Despite low average speeds, the sheer tightness of
+              the circuit, combined with numerous blind corners and elevation changes, make for a dangerous race requiring intense
+              focus from the drivers, simply to avoid crashing into a wall. The first Monaco Grand Prix was held in 1929, and it was
+              one of 7 grand prix that made up the 1950 innagural season of the FIA World Championship of Drivers.
+            </p>
+          </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img src='../resources/monaco.png' class='img-fluid'>
+          </div>
+        <div class="row">
+            <div class="col-md-6">
+              <h3>Rain in Monaco makes for an interesting race</h3>
+              <p>Looking at this chart it's easy to see that between the 1996 and 2004 seasons, fastest lap times were falling each year.
+                That is with the exception of the 1997 Monaco Grand Prix. In 1997, the weather led to a disasterous race for the majority
+                of the grid. 12 of the 22 driver who qualified were forced to retire due to crashes, damage, or simply spinning off track
+                and being unable to restart the car after stalling. Ultimately the 2 hour time limit was called on the race after 62 of 78
+                laps. Michael Schumacher won that race over 53 seconds ahead of the next car. 10 drivers finished that race, though only 4
+                would finish on the lead lap.
+              </p>
+              <h3>Make them go slower?</h3>
+                <p>
+                  (do explanation of 2005-2015 slow rise in times)
+                </p>
+              <h3>Downforce, downforce, downforce</h3>
+                <p>
+                  (do explanation of 2015-2019 increases in downforce relating to once again improving lap times.)
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>

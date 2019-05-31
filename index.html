@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>VisualF1</title>
+  <title>VisualF1α</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -12,48 +12,50 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">VisualF1alpha</a>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">VisualF1α</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Lap Time Charts
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="lapcharts/monaco.html">Monaco GP</a>
-            <a class="dropdown-item" href="lapcharts/villeneuve.html">Canadian GP</a>
-            <a class="dropdown-item" href="lapcharts/redbullring.html">Austrian GP</a>
-            <a class="dropdown-item" href="lapcharts/silverstone.html">British GP</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Circuit Comparison</a>
-            <a class="dropdown-item" href="#">Dataset</a>
+              <a class="dropdown-item" href="lapcharts/monaco.html">Monaco GP</a>
+              <a class="dropdown-item" href="lapcharts/villeneuve.html">Canadian GP</a>
+              <a class="dropdown-item" href="lapcharts/red_bull_ring.html">Austrian GP</a>
+              <a class="dropdown-item" href="lapcharts/silverstone.html">British GP</a>
           </div>
+          <li class="nav-item active">  
+            <a class="nav-link" href="#">Circuit Comparison</a>
+          </li>
+          <li class="nav-item active"></li>
+            <a class="nav-link" href="#">Dataset</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
+      
+      
     </div>
+    α
   </nav>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-5">
-        <h1>Welcome to VisualF1alpha</h1>
+        <h1>Welcome to VisualF1α</h1>
       </div>
     </div>
   <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
-          <p>VisualF1 is an open source project in development to bring together the two sides of Formula 1 racing. 
+          <p>VisualF1α is an open source project in development to bring together the two sides of Formula 1 racing. 
             Here we hope to marry the drama and storied history of 'the pinnacle of motosport', with
             the data driven research, analytics and engineering that go into the sport and the business of Formula 1.
             <p>
@@ -68,8 +70,29 @@
             <p>
             The source data was collected from database images provided by another open source project, <a href="http://ergast.com/mrd/" target="_blank" >Ergast Developer API</a>.
              </p>
-        </div>
 
+        </div>
+        <div class="col-md-6">
+          <h3>Monaco Grand Prix</h3>
+          <a href="lapcharts/monaco.html">
+              <img src='resources/monaco.png' alt="Monaco Grand Prix" class='img-fluid'>
+            </a>
+          <br>
+          <h3>Austrian Grand Prix</h3>
+          <a href="lapcharts/red_bull_ring.html">
+              <img src='resources/red_bull_ring.png' alt="Monaco Grand Prix" class='img-fluid'>
+            </a>
+          <br>
+          <h3>Canadian Grand Prix</h3>
+          <a href="lapcharts/villeneuve.html">
+              <img src='resources/villeneuve.png' alt="Monaco Grand Prix" class='img-fluid'>
+            </a>
+          <br>
+          <h3>British Grand Prix</h3>
+          <a href="lapcharts/silverstone.html">
+            <img src='resources/silverstone.png' alt="Monaco Grand Prix" class='img-fluid'>
+          </a>
+        </div>
 
 
       </div>

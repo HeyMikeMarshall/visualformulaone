@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="/resources/css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -44,39 +44,13 @@
     </div>
   </nav>
   <div class="container-fluid">
-    <div clas="row">
-        <div class="col-md-6">
-        <h1>{{racedetails.year}} {{racedetails.race}}</h1>
-        <h2>Round {{racedetails.round}} - {{racedetails.date}}</h2>
-
-        </div>
-
-    </div>
-    
-    
     <div class="row">
       <div class="col-md-12">
-          <h3 class="heading">Race Results</h3>
+          <h3 class="heading">Seasons</h3>
           <table>
-            <th>Car Number</th>
-            <th>Driver Name</th>
-            <th>Nationality</th>
-            <th>Constructor</th>
-            <th>Position</th>
-            <th>Time</th>
-            <th>Laps Completed</th>
-            <th>Status</th>
-
-            {% for result in racesummary %}
+            {% for season in seasons %}
             <tr>
-              <td>{{result.number}}</td>
-              <td>{{result.name}}</td>
-              <td>{{result.nationality}}</td>
-              <td>{{result.constructor}}</td>
-              <td>{{result.position}}</td>
-              <td>{{result.time}}</td>
-              <td>{{result.laps}}</td>
-              <td>{{result.status}}</td>
+              <td><a href='seasons/{{season[0]}}'>{{season[0]}}</a></td>
             </tr>
             {% endfor %}
           </table>

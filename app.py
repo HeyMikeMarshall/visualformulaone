@@ -23,6 +23,5 @@ def seasondetails(year):
 
 @app.route('/racesummary/<race_id>')
 def racesummary(race_id):
-    racesummary = getracesummary(race_id)
-    racedetails = getracedetails(race_id)
-    return render_template("race.html", racesummary=racesummary, racedetails=racedetails)
+    rdetails = getracedetails(race_id)
+    return render_template("race.html", rdetails=rdetails)

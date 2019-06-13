@@ -46,8 +46,8 @@
   <div class="container-fluid">
     <div clas="row">
         <div class="col-md-6">
-        <h1>{{racedetails.year}} {{racedetails.race}}</h1>
-        <h2>Round {{racedetails.round}} - {{racedetails.date}}</h2>
+        <h1>{{rdetails.details.year}} {{rdetails.details.race}}</h1>
+        <h2>Round {{rdetails.details.round}} - {{rdetails.details.date}}</h2>
 
         </div>
 
@@ -60,32 +60,52 @@
           <table>
             <th>Car Number</th>
             <th>Driver Name</th>
-            <th>Nationality</th>
             <th>Constructor</th>
             <th>Position</th>
             <th>Time</th>
-            <th>Laps Completed</th>
-            <th>Status</th>
 
-            {% for result in racesummary %}
+            {% for result in rdetails.results %}
             <tr>
               <td>{{result.number}}</td>
               <td>{{result.name}}</td>
-              <td>{{result.nationality}}</td>
               <td>{{result.constructor}}</td>
               <td>{{result.position}}</td>
               <td>{{result.time}}</td>
-              <td>{{result.laps}}</td>
-              <td>{{result.status}}</td>
             </tr>
             {% endfor %}
           </table>
         </div>
-
-
       </div>
-
-
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="heading">Driver Standings</h3>
+        <table>
+          <th>Driver</th>
+          <th>Points</th>
+          {% for result in rdetails.dstandings %}
+          <tr>
+            <td>{{result.name}}</td>
+            <td>{{result.champ_points}}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <div class="col-md-6">
+        <h3 class="heading">Constructor Standings</h3>
+        <table>
+          <th>Constructor</th>
+          <th>Points</th>
+          {% for result in rdetails.cstandings %}
+          <tr>
+              <td>{{result.constructor}}</td>
+              <td>{{result.champ_points}}</td>
+          </tr>
+            {% endfor %}
+          
+        </table>
+      </div>
+    </div>
 
   </div>
 

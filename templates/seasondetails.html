@@ -55,11 +55,11 @@
             <th>Date</th>
             {% for race in seasondetails %}
             <tr>
-              <td>{{race[0]}}</td>
-              <td>{{race[1]}}</td>
-              <td><a href="/racesummary/{{race[5]}}">{{race[2]}}</a></td>
-              <td>{{race[3]}}</td>
-              <td>{{race[4]}}</td>
+              <td>{{race.round}}</td>
+              <td>{{race.circuit}}</td>
+              <td><a href="/racesummary/{{race.race_id}}">{{race.race}}</a></td>
+              <td>{{race.country}}</td>
+              <td>{{race.date}}</td>
             </tr>
             {% endfor %}
           </table>
